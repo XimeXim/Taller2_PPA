@@ -7,8 +7,8 @@ using static Casillas;
 public class Casillas : MonoBehaviour
 {
     // Start is called before the first frame update
-    public enum TileType { Normal, Avanzar, Retirarse, Bonus }
-    public TileType tipoCasilla;
+    public enum TipoCasilla { Normal, Avanzar, Retirarse, Bonus }
+    public TipoCasilla tipoCasilla;
     public int posicionTarget;
     public int indexPosicionTablero;
     void Start()
@@ -26,16 +26,16 @@ public class Casillas : MonoBehaviour
     {
         switch (tipoCasilla)
         {
-            case TileType.Avanzar:
+            case TipoCasilla.Avanzar:
                 controladorJugadores.MoverJugadorAPosicion(jugadorActual, posicionTarget);
                 break;
-            case TileType.Retirarse:
+            case TipoCasilla.Retirarse:
                 controladorJugadores.MoverJugadorAPosicion(jugadorActual, posicionTarget);
                 break;
-            case TileType.Bonus:
+            case TipoCasilla.Bonus:
                 controladorJugadores.RepetirTurno(jugadorActual);
                 break;
-            case TileType.Normal:
+            case TipoCasilla.Normal:
             default:
                 break;
         }

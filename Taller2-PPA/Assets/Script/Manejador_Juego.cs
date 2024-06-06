@@ -32,10 +32,10 @@ public class Manejador_Juego : MonoBehaviour
         }
     }
 
-    public void GameOver(int winningPlayer, int turnCount)
+    public void GameOver(int jugadorGanador, int contadorTurno)
     {
         isGameOver = true;
-        mensajeGameOver.text = "Jugador " + winningPlayer + " ha ganado en " + turnCount + " turnos!";
+        mensajeGameOver.text = "Jugador " + jugadorGanador + " ha ganado en " + contadorTurno + " turnos!";
         mensajeGameOver.gameObject.SetActive(true);
     }
 }

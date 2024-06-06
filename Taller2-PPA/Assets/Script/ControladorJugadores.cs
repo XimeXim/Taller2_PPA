@@ -71,9 +71,9 @@ public class ControladorJugadores : MonoBehaviour
         repetirTurno = true;
     }
 
-    private void ManejarCasillasEspeciales(int playerPosition)
+    private void ManejarCasillasEspeciales(int posicionJugador)
     {
-        Casillas casillaActual = GetCasillaEnPosicion(playerPosition);
+        Casillas casillaActual = GetCasillaEnPosicion(posicionJugador);
         if (casillaActual != null)
         {
             casillaActual.PlayAccionCasilla(this, jugadorActual);
