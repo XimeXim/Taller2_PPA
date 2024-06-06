@@ -15,7 +15,7 @@ C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_PPA/Taller2-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-25164
+26784
 Successfully changed project path to: C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_PPA/Taller2-PPA
 C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_PPA/Taller2-PPA
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,13 +49,13 @@ C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_PPA/Taller2-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19656] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 669839028 [EditorId] 669839028 [Version] 1048832 [Id] WindowsEditor(7,XimeXim) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23660] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1538342237 [EditorId] 1538342237 [Version] 1048832 [Id] WindowsEditor(7,XimeXim) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19656] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 669839028 [EditorId] 669839028 [Version] 1048832 [Id] WindowsEditor(7,XimeXim) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23660] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1538342237 [EditorId] 1538342237 [Version] 1048832 [Id] WindowsEditor(7,XimeXim) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 13.63 ms, found 6 plugins.
-Preloading 2 native plugins for Editor in 2.46 ms.
+Refreshing native plugins compatible for Editor in 15.28 ms, found 6 plugins.
+Preloading 2 native plugins for Editor in 2.32 ms.
 Initialize engine version: 2022.3.23f1 (dbb3f7c5b5c6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_PPA/Taller2-PPA/Assets
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004650 seconds.
-- Loaded All Assemblies, in  0.337 seconds
+Registered in 0.006531 seconds.
+- Loaded All Assemblies, in  0.320 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.266 seconds
-Domain Reload Profiling: 602ms
-	BeginReloadAssembly (101ms)
+- Finished resetting the current domain, in  0.262 seconds
+Domain Reload Profiling: 581ms
+	BeginReloadAssembly (103ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (99ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (122ms)
+		LoadAssemblies (101ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (140ms)
-			TypeCache.Refresh (138ms)
-				TypeCache.ScanAssembly (119ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (267ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (119ms)
+				TypeCache.ScanAssembly (107ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (262ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (202ms)
+		SetupLoadedEditorAssemblies (204ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (8ms)
 			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (2ms)
 			ProcessInitializeOnLoadAttributes (141ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 602ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.727 seconds
-Refreshing native plugins compatible for Editor in 7.05 ms, found 6 plugins.
+- Loaded All Assemblies, in  0.695 seconds
+Refreshing native plugins compatible for Editor in 7.38 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.713 seconds
-Domain Reload Profiling: 1438ms
-	BeginReloadAssembly (193ms)
+- Finished resetting the current domain, in  0.828 seconds
+Domain Reload Profiling: 1521ms
+	BeginReloadAssembly (162ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (434ms)
-		LoadAssemblies (376ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (431ms)
+		LoadAssemblies (328ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (190ms)
-			TypeCache.Refresh (169ms)
-				TypeCache.ScanAssembly (154ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (714ms)
+		AnalyzeDomain (195ms)
+			TypeCache.Refresh (172ms)
+				TypeCache.ScanAssembly (158ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (828ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (567ms)
+		SetupLoadedEditorAssemblies (655ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (65ms)
-			ProcessInitializeOnLoadAttributes (463ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (551ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 7.48 ms, found 6 plugins.
-Preloading 2 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 10.26 ms, found 6 plugins.
+Preloading 2 native plugins for Editor in 0.11 ms.
 Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (101.9 KB). Loaded Objects now: 3916.
+Unloading 56 unused Assets / (102.3 KB). Loaded Objects now: 3916.
 Memory consumption went from 134.5 MB to 134.4 MB.
-Total: 3.850100 ms (FindLiveObjects: 0.274800 ms CreateObjectMapping: 0.202800 ms MarkObjects: 3.192100 ms  DeleteObjects: 0.178800 ms)
+Total: 4.320600 ms (FindLiveObjects: 0.315500 ms CreateObjectMapping: 0.103000 ms MarkObjects: 3.728100 ms  DeleteObjects: 0.172700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,145 +181,33 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 614094.069834 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762fd844046d1e3d494afd13e205bcd6') in 0.043678 seconds
+  Time since last request: 647926.086739 seconds.
+  path: Assets/Modelos/Jugador/Jugador1.png
+  artifactKey: Guid(220b0b9476a6b7d4a866bac184e76e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modelos/Jugador/Jugador1.png using Guid(220b0b9476a6b7d4a866bac184e76e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543bbb24ee7bd1708ff04247e2b3f64c') in 0.057641 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 90.896602 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad9b4f75a5e1421832952a0f544ff692') in 0.013757 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/Modelos/Jugador/Jugador3.png
+  artifactKey: Guid(3eb04b6aa874b6946b1d01a7e7bb4800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modelos/Jugador/Jugador3.png using Guid(3eb04b6aa874b6946b1d01a7e7bb4800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baf8a7493ac5219fe79e4504979963a9') in 0.018436 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 37.311717 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b11997aa53187ad6efdab72ff195dd0b') in 0.013924 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/Modelos/Jugador
+  artifactKey: Guid(f41feeb90e64f304eb64a98c95afbeff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modelos/Jugador using Guid(f41feeb90e64f304eb64a98c95afbeff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f8671e6368bd25b758efe376bf1a86') in 0.000594 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.496701 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb0eb0677305806baea9ef196d3a992') in 0.014724 seconds
+  Time since last request: 2.167934 seconds.
+  path: Assets/Modelos/Tablero/Tablero.png
+  artifactKey: Guid(bb8d04f7b92851040a1d97dc681b1d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modelos/Tablero/Tablero.png using Guid(bb8d04f7b92851040a1d97dc681b1d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31400b6b7e6f3b1844243e6f678acd79') in 0.014636 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.033008 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666684890a33658e43d179b6e40f1318') in 0.012975 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.032394 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f7e28ba5ea25d4982cee5ed9111b05') in 0.013120 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.044543 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7640b3bdfb076666573ca67323978e') in 0.011347 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.038026 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ededaaee4b474b7cd5ea7f41822db720') in 0.011136 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.091687 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddd4ca3b561e46caf90a7dcdb416836') in 0.014188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.070384 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1a98ecade9db9b0be276a10f1ef93e') in 0.013908 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.044210 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01bd2e95233b4780de56092885dd75a1') in 0.011270 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.072736 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf279c16b66ba67538420561d77e94a') in 0.013052 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.048637 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1aefe2bd1ff95a23bc4cab39fb61399') in 0.011896 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.031527 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82cfe8c4d94e9bfeaea5823481f0f3f') in 0.011153 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 0.032405 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08080c85e1aec44fcfb0206a46dff7e4') in 0.011982 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 1.501402 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf5eee7eb0b7106e4cd496adb505d30') in 0.012471 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 66.887171 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b8b82276129a4a650bd4f183433eec') in 0.012490 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
-========================================================================
-Received Import Request.
-  Time since last request: 6.416554 seconds.
-  path: Assets/Resources/VuforiaConfiguration.asset
-  artifactKey: Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(0aef654549ddb604ca533c4322ef5e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8ad4e0485fd234773ddca64a05b015') in 0.015323 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 434
+Number of asset objects unloaded after import = 2
