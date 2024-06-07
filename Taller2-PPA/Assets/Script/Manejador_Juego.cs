@@ -9,7 +9,7 @@ public class Manejador_Juego : MonoBehaviour
     public ControladorJugadores controladorJugadores;
     public Button botonArrojarDado;
     public Text mensajeGameOver;
-    public ArrojarDado dado;
+    public LanzarDado dado;
 
     private bool isGameOver = false;
     void Start()
@@ -28,7 +28,7 @@ public class Manejador_Juego : MonoBehaviour
     {
         if (!isGameOver)
         {
-            dado.ArrojaDado();
+            dado.LanzaDado();
         }
     }
 
