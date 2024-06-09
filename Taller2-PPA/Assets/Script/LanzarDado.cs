@@ -22,7 +22,7 @@ public class LanzarDado : MonoBehaviour
     public void LanzaDado()
     {
         int resultado = Random.Range(1, 7); // Genera un número aleatorio entre 1 y 6
-        resultadoDado.text = "Resultado: " + resultado.ToString(); // Actualiza el texto del resultado
+        resultadoDado.text = "Resultado: Avanza " + resultado.ToString() + " posiciones!"; // Actualiza el texto del resultado
         controladorJugadores.MoverJugador(resultado); // Mueve al jugador actual
     }
 }

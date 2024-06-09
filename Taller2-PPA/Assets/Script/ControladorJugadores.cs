@@ -29,19 +29,21 @@ public class ControladorJugadores : MonoBehaviour
         
     }
 
-    public void MoverJugador(int pasos)
+    public void MoverJugador(int valorDado)
     {
-        posicionJugador[jugadorActual] += pasos;
-        if (posicionJugador[jugadorActual] >= posicionTablero.Length)
+        int indexJugador = jugadorActual;
+        int indexNuevaPosicion = posicionJugador[indexJugador] + valorDado;
+
+        // Limitar a la última posición del tablero
+        if (indexNuevaPosicion >= casillas.Length)
         {
-            // Ganó el juego
-            posicionJugador[jugadorActual] = posicionTablero.Length - 1;
-            Debug.Log("Jugador " + (jugadorActual + 1) + " ha ganado!");
-            manejador_Juego.GameOver(jugadorActual + 1, contadorTurno);
-            return;
+            indexNuevaPosicion = casillas.Length - 1;
+            manejador_Juego.GameOver(jugadorActual, contadorTurno);
         }
 
-        jugadores[jugadorActual].position = posicionTablero[posicionJugador[jugadorActual]];
+        Casillas casillaTarget = casillas[indexNuevaPosicion];
+        jugadores[indexJugador].position = casillaTarget.transform.position;
+        posicionJugador[indexJugador] = indexNuevaPosicion;
         // Verificar casilla especial y actuar en consecuencia
         ManejarCasillasEspeciales(posicionJugador[jugadorActual]);
         
@@ -65,7 +67,6 @@ public class ControladorJugadores : MonoBehaviour
         posicionJugador[indexJugador] = posicionTarget;
         jugadores[indexJugador].position = posicionTablero[posicionTarget];
     }
-
     public void RepetirTurno(int jugadorActual)
     {
         repetirTurno = true;

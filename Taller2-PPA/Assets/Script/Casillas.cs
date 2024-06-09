@@ -7,10 +7,11 @@ using static Casillas;
 public class Casillas : MonoBehaviour
 {
     // Start is called before the first frame update
-    public enum TipoCasilla { Normal, Avanzar, Retirarse, Bonus }
+    public enum TipoCasilla { Azul, Verde, Negra, Amarilla }
     public TipoCasilla tipoCasilla;
     public int posicionTarget;
     public int indexPosicionTablero;
+
     void Start()
     {
         
@@ -26,18 +27,19 @@ public class Casillas : MonoBehaviour
     {
         switch (tipoCasilla)
         {
-            case TipoCasilla.Avanzar:
+            case TipoCasilla.Verde:
                 controladorJugadores.MoverJugadorAPosicion(jugadorActual, posicionTarget);
                 break;
-            case TipoCasilla.Retirarse:
+            case TipoCasilla.Negra:
                 controladorJugadores.MoverJugadorAPosicion(jugadorActual, posicionTarget);
                 break;
-            case TipoCasilla.Bonus:
+            case TipoCasilla.Amarilla:
                 controladorJugadores.RepetirTurno(jugadorActual);
                 break;
-            case TipoCasilla.Normal:
+            case TipoCasilla.Azul:
             default:
                 break;
         }
     }
+
 }

@@ -9,7 +9,7 @@ public class Manejador_Juego : MonoBehaviour
     public ControladorJugadores controladorJugadores;
     public Button botonArrojarDado;
     public Text mensajeGameOver;
-    public LanzarDado dado;
+    private LanzarDado dado;
 
     private bool isGameOver = false;
     void Start()
@@ -35,7 +35,7 @@ public class Manejador_Juego : MonoBehaviour
     public void GameOver(int jugadorGanador, int contadorTurno)
     {
         isGameOver = true;
-        mensajeGameOver.text = "Jugador " + jugadorGanador + " ha ganado en " + contadorTurno + " turnos!";
+        mensajeGameOver.text = "El Jugador " + jugadorGanador + " ha ganado en " + contadorTurno + " turnos!";
         mensajeGameOver.gameObject.SetActive(true);
     }
 }
