@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEditor.Experimental.GraphView.GraphView;
+using UnityEngine.UI;
 
 public class ControladorJugadores : MonoBehaviour
 {
@@ -12,11 +13,11 @@ public class ControladorJugadores : MonoBehaviour
     public Transform[] jugadores; // Array de jugadores
     public Vector3[] posicionTablero; // Posiciones en el tablero
     public Casillas[] casillas; // Array de todas las casillas
+    public Text textoTurno;
 
     private int jugadorActual = 0; // Jugador actual
     private int[] posicionJugador; // Posición de cada jugador en el tablero
     private int contadorTurno = 0;
-    private bool repetirTurno = false; // Variable para manejar si un jugador repite su turno
 
     void Start()
     {
@@ -31,65 +32,47 @@ public class ControladorJugadores : MonoBehaviour
 
     public void MoverJugador(int valorDado)
     {
+
         int indexJugador = jugadorActual;
         int indexNuevaPosicion = posicionJugador[indexJugador] + valorDado;
 
-        // Limitar a la última posición del tablero
-        if (indexNuevaPosicion >= casillas.Length)
-        {
-            indexNuevaPosicion = casillas.Length - 1;
-            manejador_Juego.GameOver(jugadorActual, contadorTurno);
-        }
-
-        Casillas casillaTarget = casillas[indexNuevaPosicion];
-        jugadores[indexJugador].position = casillaTarget.transform.position;
-        posicionJugador[indexJugador] = indexNuevaPosicion;
-        // Verificar casilla especial y actuar en consecuencia
-        ManejarCasillasEspeciales(posicionJugador[jugadorActual]);
+        MoverJugadorAPosicion(indexJugador,indexNuevaPosicion);
         
-
-        if (!repetirTurno)
+        if (!RepetirTurno(indexJugador))
         {
             // Cambiar al siguiente jugador si no repite turno
             jugadorActual = (jugadorActual + 1) % jugadores.Length;
             contadorTurno++;
+            UpdateTextoDeTurno();
         }
-        
     }
 
+    public void UpdateTextoDeTurno()
+    {
+        textoTurno.text = "Turno: Jugador " + (jugadorActual + 1);
+    }
     public void MoverJugadorAPosicion(int indexJugador,int posicionTarget)
     {
-        if (posicionTarget >= posicionTablero.Length)
+        // Limitar a la última posición del tablero
+        if (indexJugador >= casillas.Length)
         {
-            posicionTarget = posicionTablero.Length - 1;
+            posicionTarget = casillas.Length - 1;
+            manejador_Juego.GameOver(jugadorActual, contadorTurno);
+            Manejador_Audio.instancia.PlaySonidoGanador();
         }
-
+        Casillas casillaTarget = casillas[posicionTarget];
+        jugadores[indexJugador].position = casillaTarget.transform.position;
         posicionJugador[indexJugador] = posicionTarget;
-        jugadores[indexJugador].position = posicionTablero[posicionTarget];
-    }
-    public void RepetirTurno(int jugadorActual)
-    {
-        repetirTurno = true;
+        Manejador_Audio.instancia.PlaySonidoMoverJugador();
+
+        // Verificar casilla especial y actuar en consecuencia
+        manejador_Juego.ManejarCasillasEspeciales(posicionJugador[jugadorActual]);
+
     }
 
-    private void ManejarCasillasEspeciales(int posicionJugador)
+    public bool RepetirTurno(int jugadorActual)
     {
-        Casillas casillaActual = GetCasillaEnPosicion(posicionJugador);
-        if (casillaActual != null)
-        {
-            casillaActual.PlayAccionCasilla(this, jugadorActual);
-        }
-    }
+        return true;
 
-    private Casillas GetCasillaEnPosicion(int posicion)
-    {
-        foreach (Casillas casilla in casillas)
-        {
-            if (casilla.indexPosicionTablero == posicion)
-            {
-                return casilla;
-            }
-        }
-        return null;
     }
 }
